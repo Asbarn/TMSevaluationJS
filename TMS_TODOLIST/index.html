@@ -45,9 +45,17 @@
 
                     <fieldset>
                         <legend>Добавить</legend>
-                        <p><label>Задание  </label><input type="text" id="firstNameAdd"></p>
+                        <p><label class="taskName">Задание  </label><input type="text" id="firstNameAdd"></p>
                         <p><label>Описание (необязательно)</label><input type="text" id="lastNameAdd"></p>
-                        <!-- <p><label>Важность</label><input type="text" id="ageAdd"></p> -->
+                        <p> <label></label>Выберите важность:</label>
+                        </p>
+
+                        <select id="prior">
+  <option value="Бессрочное">Бессрочное</option>
+  <option value="Триальное">Триальное</option>
+  <option value="Срочное">Срочное</option>
+</select>
+
                     </fieldset>
 
                     <input type="submit" value="Отправить" id="sendPerson">
@@ -61,9 +69,16 @@
 
                     <fieldset>
                         <legend>Редактировать</legend>
-                        <p><label>Задание  </label><input type="text" id="firstNameChange" value=""></p>
+                        <p><label class="taskNameChange">Задание  </label><input type="text" id="firstNameChange" value=""></p>
                         <p><label>Описание </label><input type="text" id="lastNameChange" value=""></p>
-                        <!-- <p><label>Важность</label><input type="text" id="ageAdd"></p> -->
+                        <p> <label></label>Выберите важность:</label>
+                        </p>
+
+                        <select id="priorChange">
+  <option value="Бессрочное">Бессрочное</option>
+  <option value="Триальное">Триальное</option>
+  <option value="Срочное">Срочное</option>
+</select>
                     </fieldset>
 
                     <input type="submit" value="Изменить" id="changePerson">
